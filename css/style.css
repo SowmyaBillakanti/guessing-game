@@ -1,0 +1,31 @@
+#site-title {
+    color: teal;
+}
+
+body {
+    height: calc(100vh - 300px);
+}
+
+header{
+    font-style: oblique;
+    height: 80px;
+    border-style: double;
+    text-align: center;
+    background-color: linen;
+}
+
+main {
+    height: 130%;
+    border-style: ridge;
+    background-color: bisque;
+    color: cadetblue;
+    font-style: initial;
+  }
+
+  footer {
+    height: 100px;
+    border-style: solid;
+    text-align: center;
+    background-color: lightcyan;
+    color: teal;
+  }
