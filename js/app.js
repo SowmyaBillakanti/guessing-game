@@ -76,27 +76,27 @@ alert("We are friends!!");
     alert('Lets play a game ' + username);
 
 
-var correctanswer = 45;
+    var correctanswer = Math.floor(Math.random() * 10);
 
-for (var i=0; i<=4; i++){
-    var userguess = parseInt(prompt('Guess a number between 1-100'));
-    if(userguess === correctanswer){
-        alert('You are correct!');
-        totalcount++;
-        break;
-
-    } else if (userguess < correctanswer){
-        alert('You are too low');
-    }else if (userguess > correctanswer){
-        alert('You are too high');
+    for (var i=0; i<=4; i++){
+        var userguess = parseInt(prompt('Guess a number between 1-10'));
+        if(userguess === correctanswer){
+            alert('You are correct!');
+            totalcount++;
+            break;
+    
+        } else if (userguess < correctanswer){
+            alert('You are too low');
+        }else if (userguess > correctanswer){
+            alert('You are too high');
+        }
+        if(i===4){
+            alert("Correct answer is " + correctanswer);
+        }
     }
-    if(i===4){
-        alert("Correct answer is " + correctanswer);
-    }
-}
-
-console.log(userguess);
-
+    
+    console.log(userguess);
+    
 // Guess my fav place using an array
 
 
@@ -122,6 +122,7 @@ for(var i=0; i<6; i++){
 }
 alert('My favourite places are ' + ans);
 alert('Total Correct answers are ' + totalcount);
+
 
 
 
