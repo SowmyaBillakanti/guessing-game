@@ -23,9 +23,8 @@ main {
   }
 
   footer {
-    height: 100px;
+    height: 300px;
     border-style: solid;
-    text-align: center;
     background-color: lightcyan;
     color: teal;
   }
