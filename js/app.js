@@ -2,30 +2,37 @@
 
 console.log('JS is loaded');
 var totalcount = 0;
-
+var globalUser;
+function greet() {
     var username = prompt('What is your name?');
-    
+    globalUser = username;
     alert("Welcome " + username);
     console.log(username);
     console.log('Hello ' + username);
 
     alert('You will know me more!');
+}
 
+greet();
 
-var user = prompt('Am I your friend?');
-if (user.toLowerCase() === 'y'|| user.toLowerCase() === 'yes'){
+function question1() {
+    var user = prompt('am I your friend?');
+    if (user.toLowerCase() === 'y'|| user.toLowerCase() === 'yes'){
     alert("She is a perfect friend to be with!");
     totalcount++;
     // console.log("Yes, You are correct!");
-
-}else {
-alert("We are friends!!");
+    }else {
+    alert("We are friends!!");
 // console.log("No, You are wrong :(");
 
 }
     console.log(user);
+}
 
-    var animal = prompt('Is she an Elephant lover?');
+question1();
+
+function question2 () {
+    var animal= prompt('Is she an Elephant lover?');
     if (animal.toLowerCase() === 'y'|| animal.toLowerCase() === 'yes'){
     alert("Yes!Elephants are adorable");
     totalcount++;
@@ -35,8 +42,11 @@ alert("We are friends!!");
         // console.log("No, You are wrong :(");
     }
     console.log(animal);
+}
 
+question2();
 
+function question3 () {
     var place = prompt("Is she from United States?");
     if (place.toLowerCase() === 'y'|| place.toLowerCase() === 'yes'){
         alert('No! She is from India');
@@ -48,8 +58,11 @@ alert("We are friends!!");
     }
 
     console.log(place);
+}
 
+question3();
 
+function question4() {
     var color = prompt('Is Blue her favourite colour?');
     if (color.toLowerCase() === 'y'|| color.toLowerCase() === 'yes'){
         alert('Yes! She is as cool as Blue');
@@ -60,7 +73,11 @@ alert("We are friends!!");
         // console.log("No, You are wrong :(");
     }
     console.log(color);
+}
 
+  question4();
+
+function question5() {
     var edu = prompt('Is she an MBA graduate?');
     if (edu.toLowerCase() === 'y'|| edu.toLowerCase() === 'yes'){
         alert('She will be a great business partner!');
@@ -70,10 +87,13 @@ alert("We are friends!!");
         alert('In fact, she did her MBA in Finance and Marketing!');
         // console.log("No, You are wrong :(");
     }
-    console.log(edu);
+    // console.log(edu);
+}
 
+question5();
 
-    alert('Lets play a game ' + username);
+function question6() {
+    alert('Lets play a game ' + globalUser);
 
 
     var correctanswer = Math.floor(Math.random() * 10);
@@ -94,12 +114,13 @@ alert("We are friends!!");
             alert("Correct answer is " + correctanswer);
         }
     }
-    
-    console.log(userguess);
-    
+}   
+    // console.log(userguess);
+question6();
 // Guess my fav place using an array
 
 
+function question7() {
 var ans = ['paris', 'turkey', 'hawaii', 'venice', 'santorini', 'sydney'];
 
 for(var i=0; i<6; i++){
@@ -121,6 +142,11 @@ for(var i=0; i<6; i++){
     }
 }
 alert('My favourite places are ' + ans);
+}
+
+question7();
+
+
 alert('Total Correct answers are ' + totalcount);
 
 
