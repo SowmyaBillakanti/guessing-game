@@ -10,20 +10,27 @@ header{
     font-style: oblique;
     height: 80px;
     border-style: double;
+    border-radius: 10px;
     text-align: center;
     background-color: linen;
 }
 
 main {
-    height: 130%;
+    height: calc(vh-120px);
+    border-radius: 10px;
     border-style: ridge;
     background-color: bisque;
     color: cadetblue;
     font-style: initial;
   }
 
+  ol li {
+    color: rgb(201, 197, 0);
+  }
+
   footer {
     height: 300px;
+    border-radius: 10px;
     border-style: solid;
     background-color: lightcyan;
     color: teal;
