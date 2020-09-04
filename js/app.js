@@ -96,7 +96,7 @@ function question6() {
     alert('Lets play a game ' + globalUser);
 
 
-    var correctanswer = Math.floor(Math.random() * 10);
+    var correctanswer = Math.floor(Math.random() * 10)+1;
 
     for (var i=0; i<=4; i++){
         var userguess = parseInt(prompt('Guess a number between 1-10'));
