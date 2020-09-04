@@ -98,7 +98,7 @@ function question6() {
 
     var correctanswer = Math.floor(Math.random() * 10)+1;
 
-    for (var i=0; i<=4; i++){
+    for (var i=1; i<=4; i++){
         var userguess = parseInt(prompt('Guess a number between 1-10'));
         if(userguess === correctanswer){
             alert('You are correct!');
